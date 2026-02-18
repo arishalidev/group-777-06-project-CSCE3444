@@ -6,12 +6,12 @@ Our project, NavSense aims to give new and experinced students an accesible way 
 |Name|Role|
 |----------|---------|
 |Arish Ali | Frontend|
-|Satvik Janagama | TBD|
-|Zakeria Khaliq | TBD|
-|Yashas Padigala | TBD|
-|Jason Karuma | TBD|
+|Satvik Janagama | Frontend|
+|Zakeria Khaliq | Backend|
+|Yashas Padigala | Database|
+|Jason Karuma | Backend|
 
 <br>
-Link to Trello board: TBD
+[Link to Trello board](https://trello.com/invite/b/6994e69125eb4d16968d1472/ATTI19e959aa4c6540787a8019821357883a12D8F872/group-777)
 
 

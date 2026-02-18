@@ -12,6 +12,4 @@ Our project, NavSense aims to give new and experinced students an accesible way 
 |Jason Karuma | Backend|
 
 <br>
-[Link to Trello board](https://trello.com/invite/b/6994e69125eb4d16968d1472/ATTI19e959aa4c6540787a8019821357883a12D8F872/group-777)
-
-
+<a href="https://trello.com/invite/b/6994e69125eb4d16968d1472/ATTI19e959aa4c6540787a8019821357883a12D8F872/group-777"> Link to Trello board </a>

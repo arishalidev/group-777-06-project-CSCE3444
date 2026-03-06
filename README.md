@@ -1,3 +1,4 @@
+
 <h2>Group 777</h2>
 Our project, NavSense aims to give new and experinced students an accesible way to navigate UNT Discovery Park.
 
@@ -13,3 +14,6 @@ Our project, NavSense aims to give new and experinced students an accesible way 
 
 <br>
 <a href="https://trello.com/invite/b/6994e69125eb4d16968d1472/ATTI19e959aa4c6540787a8019821357883a12D8F872/group-777"> Link to Trello board </a>
+<br>
+<br>
+<b>Scrum Meeting Times:</b> Every Saturday at 9am

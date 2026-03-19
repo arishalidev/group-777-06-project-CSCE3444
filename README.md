@@ -4,16 +4,17 @@ Our project, NavSense aims to give new and experinced students an accesible way 
 
 <h3>Board:</h3>
 
-|Name|Role|
-|----------|---------|
-|Arish Ali | Frontend|
-|Satvik Janagama | Frontend|
-|Zakeria Khaliq | Backend|
-|Yashas Padigala | Database|
-|Jason Karuma | Backend|
+|Name| Role     |
+|----------|----------|
+|Arish Ali | Backend  |
+|Satvik Janagama | Backend  |
+|Zakeria Khaliq | Frontend |
+|Yashas Padigala | Frontend |
+|Jason Karuma | Database |
 
 <br>
+<b>Trello:</b>
 <a href="https://trello.com/invite/b/6994e69125eb4d16968d1472/ATTI19e959aa4c6540787a8019821357883a12D8F872/group-777"> Link to Trello board </a>
 <br>
 <br>
-<b>Scrum Meeting Times:</b> Every Saturday at <b>10 am</b>
+<b>Scrum Meeting Times:</b> Every Saturday at <b>10 am</b> <a href="https://unt.zoom.us/j/83838002452">Meeting link</a>

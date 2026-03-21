@@ -1,8 +1,11 @@
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 function Navbar() {
     return (
-        <div>
-            <a>hi</a>
-        </div>
+        <nav>
+            <NavLink>hi</NavLink>
+        </nav>
     )
 }
 

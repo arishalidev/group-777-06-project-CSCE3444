@@ -16,7 +16,7 @@ function Navbar() {
                 <div>
                     <Link to={'/'}>NavSense</Link>
                 </div>
-                <NavLink to={'/'} className={navItemCss} >hi</NavLink>
+                <NavLink to={'/'} className={navItemCss} >Home</NavLink>
                 <NavLink to={'/search'} className={navItemCss} >Search</NavLink>
                 <NavLink to={'/navigation'} className={navItemCss} >Navigation</NavLink>
             </div>

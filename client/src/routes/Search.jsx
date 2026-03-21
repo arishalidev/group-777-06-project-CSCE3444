@@ -4,7 +4,9 @@ function Search() {
     return (
         <div>
             <Navbar></Navbar>
-            <h1 className={'text-2xl'}>Search Page</h1>
+            <div className={'py-24'}>
+                <h1 className={'text-6xl text-center'}>Search Page</h1>
+            </div>
         </div>
     )
 

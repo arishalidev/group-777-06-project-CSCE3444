@@ -4,7 +4,9 @@ function Navigation() {
     return (
         <div>
             <Navbar></Navbar>
-            <h1 className={'text-2xl'}>Navigation Page</h1>
+            <div className={'py-24'}>
+                <h1 className={'text-6xl text-center'}>Navigation Page</h1>
+            </div>
         </div>
     )
 

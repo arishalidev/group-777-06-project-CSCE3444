@@ -1,4 +1,9 @@
 import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Search from './routes/Search.jsx'
+import Home from "./components/Home.jsx";
+import Navigation from "./components/Navigation.jsx";
 
 function App() {
     const [data, setData] = useState("Loading...");
@@ -12,10 +17,13 @@ function App() {
     }, []);
 
     return (
-        <div style={{ padding: '40px', fontFamily: 'sans-serif' }}>
-            <h1>Campus Nav Project</h1>
-            <p>Server Status: <strong>{data}</strong></p>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Home />}></Route>
+                <Route path='/search' element={<Search />}></Route>
+                <Route path='/navigation' element={<Search />}></Route>
+            </Routes>
+        </BrowserRouter>
     )
 }
 

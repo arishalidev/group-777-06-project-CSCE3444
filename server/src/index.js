@@ -8,7 +8,8 @@ const PORT = 5001;
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
+
+app.get('/status', (req, res) => {
     res.json({message: 'Server is online!'});
 });
 

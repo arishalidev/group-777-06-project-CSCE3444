@@ -6,8 +6,7 @@ function Home() {
     const [data, setData] = useState("Loading...");
 
     useEffect(() => {
-        // Fetching from your local Node server
-        fetch('http://localhost:5001/')
+        fetch('http://localhost:5001/status')
             .then(res => res.json())
             .then(json => setData(json.message))
             .catch(err =>  {
@@ -15,6 +14,7 @@ function Home() {
                 console.error(err);
             });
     }, []);
+
     return (
         <div>
             <Navbar></Navbar>
@@ -24,7 +24,6 @@ function Home() {
             </div>
         </div>
     )
-
 }
 
 export default Home

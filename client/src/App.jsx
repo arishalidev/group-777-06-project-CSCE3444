@@ -8,6 +8,7 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
+                {/* each Route leads to different page. Default is '/' */}
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/search' element={<Search />}></Route>
                 <Route path='/navigation' element={<Navigation />}></Route>

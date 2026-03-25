@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 const BASE_URL = "https://api.weather.gov";
 // const BASE_URL = "https://api.weather.gov/alerts/active?area=TX"
 
@@ -12,7 +12,7 @@ function extractHazards(alerts) {
     }));
 }
 
-async function getWeatherAlerts(state = "TX") {
+export async function getWeatherAlerts(state = "TX") {
     try {
         const response = await axios.get(
             `${BASE_URL}/alerts/active`,
@@ -35,5 +35,3 @@ async function getWeatherAlerts(state = "TX") {
         throw new Error("Failed to fetch weather");
     }
 }
-
-module.exports = { getWeatherAlerts };

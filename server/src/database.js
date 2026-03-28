@@ -25,3 +25,14 @@ export async function run() {
         await client.close();
     }
 }
+
+export async function getNodes() {
+    const db = client.db('campus_graph');
+    const nodes = db.collection('nodes');
+
+    const query = { "properties.type" : "building entrance" };
+    const cursor = nodes.find(query);
+
+    await cursor.forEach(node => console.log(node));
+
+}

@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import {run} from './database.js'
+import {getNodes, run} from './database.js'
 import { getWeatherAlerts } from "./weather.js";
 
 const app = express();
@@ -30,4 +30,6 @@ app.get("/api/weather/alerts", async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 });
+
 run().catch(console.dir);
+getNodes();

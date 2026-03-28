@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import {getNodes, run} from './database.js'
+import {getAllNodes, run} from './database.js'
 import { getWeatherAlerts } from "./weather.js";
 
 const app = express();
@@ -28,8 +28,21 @@ app.get("/api/weather/alerts", async (req, res) => {
         console.log(data)
     } catch (err) {
         res.status(500).json({ error: err.message });
+        console.error(err.message);
     }
 });
 
 run().catch(console.dir);
-getNodes();
+
+
+app.get("/api/nodes/all", async (req, res) => {
+
+    try {
+        const nodeData = await getAllNodes();
+        res.json({ nodes: nodeData })
+        console.log(nodeData);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+        console.error(err.message);
+    }
+});

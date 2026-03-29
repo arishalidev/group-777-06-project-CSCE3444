@@ -30,5 +30,10 @@ export async function getAllNodes() {
     const db = client.db('campus_graph');
     const nodes = db.collection('nodes');
     return await nodes.find({}).toArray();
+}
 
+export async function getAllEdges() {
+    const db = client.db('campus_graph');
+    const nodes = db.collection('edges');
+    return await nodes.find({}).toArray();
 }

@@ -30,7 +30,7 @@ function MyMap() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
 
             {nodes.map((node) => (
-                <Marker key={node._id} position={[node.geometry.coordinates[1], node.geometry.coordinates[0]]}>
+                <Marker key={node.properties.id} position={[node.geometry.coordinates[1], node.geometry.coordinates[0]]}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>

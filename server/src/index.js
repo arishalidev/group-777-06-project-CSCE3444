@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import {getAllNodes, run} from './database.js'
+import { getAllNodes, run} from './database.js'
 import { getWeatherAlerts } from "./weather.js";
 
 const app = express();
@@ -36,7 +36,6 @@ run().catch(console.dir);
 
 
 app.get("/api/nodes/all", async (req, res) => {
-
     try {
         const nodeData = await getAllNodes();
         res.json({ nodes: nodeData })

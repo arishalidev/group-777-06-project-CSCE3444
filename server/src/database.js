@@ -26,10 +26,12 @@ export async function run() {
     }
 }
 
-export async function getAllNodes() {
+export async function getNodes(id = []) {
     const db = client.db('campus_graph');
     const nodes = db.collection('nodes');
-    return await nodes.find({}).toArray();
+
+    const query = {'properties.id':{$in:id}};
+    return await nodes.find(query).toArray();
 }
 
 export async function getAllEdges() {

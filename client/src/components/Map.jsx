@@ -1,23 +1,33 @@
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polyline } from 'react-leaflet';
+import L from 'leaflet';
+
 import {useEffect, useState} from "react";
 
 function MyMap() {
     const startingPosition = [33.214587, -97.148325]; // Latitude, Longitude
 
     const [nodes, setNodes] = useState([]);
+    const [lines, setLines] = useState([]);
 
-    console.log((nodes));
     useEffect(() => {
         fetch('http://localhost:5001/api/nodes/all')
             .then(res => res.json())
             .then(json => {
-                setNodes(json.nodes)
+                setNodes(json.nodes);
+                setLines(json.lines);
             })
             .catch(err => {
                 console.error(err);
             });
     } , []);
+
+    const customDot = new L.divIcon({
+        className: 'custom-div-icon',
+        html: "<div style='background-color:darkblue; width:10px; height:10px; border-radius:50%;'></div>",
+        iconSize: [10, 10],
+        iconAnchor: [5, 5]
+    });
 
     return (
         <MapContainer
@@ -30,11 +40,16 @@ function MyMap() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
 
             {nodes.map((node) => (
-                <Marker key={node.properties.id} position={[node.geometry.coordinates[1], node.geometry.coordinates[0]]}>
-                    <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
-                </Marker>
+                <Marker icon={customDot} key={node.properties.id} position={[node.geometry.coordinates[1], node.geometry.coordinates[0]]}
+                />
+            ))}
+
+            {lines.map((line, index) => (
+                <Polyline
+                    key={index}
+                    positions={line.map(coord => [coord[1], coord[0]])}
+                    pathOptions={{ color: 'blue', weight: 5 }}
+                />
             ))}
         </MapContainer>
 

@@ -4,7 +4,6 @@ import dijkstra from 'graphology-shortest-path';
 export function calculateShortestPath(to, from, edgeData) {
     const graph = new UndirectedGraph();
 
-
     for(let i = 0; i < edgeData.length; i++) {
         graph.mergeUndirectedEdge(edgeData.at(i).from, edgeData.at(i).to, { weight: edgeData.at(i).weight });
     }
@@ -18,7 +17,7 @@ export function calculateShortestPath(to, from, edgeData) {
         totalWeight += graph.getEdgeAttribute(edge, 'weight');
     }
 
-    return [path.map(Number), totalWeight];
+    return [path, totalWeight];
 }
 
 

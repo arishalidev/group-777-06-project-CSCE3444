@@ -20,8 +20,22 @@ export async function run() {
         // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
         console.log("Successfully connected to MongoDB!");
-    } finally {
+    } catch (err) {
         // Ensures that the client will close when you finish/error
-        await client.close();
+        console.error(`Mongodb connection failed: ${err}`);
     }
+}
+
+export async function getNodes(id = []) {
+    const db = client.db('campus_graph');
+    const nodes = db.collection('nodes');
+
+    const query = {'properties.id':{$in:id}};
+    return await nodes.find(query).toArray();
+}
+
+export async function getAllEdges() {
+    const db = client.db('campus_graph');
+    const nodes = db.collection('edges');
+    return await nodes.find({}).toArray();
 }

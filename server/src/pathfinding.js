@@ -1,5 +1,5 @@
 import UndirectedGraph from 'graphology';
-import dijkstra from 'graphology-shortest-path';
+import { dijkstra } from 'graphology-shortest-path';
 
 export function calculateShortestPath(to, from, edgeData) {
     const graph = new UndirectedGraph();
@@ -17,7 +17,7 @@ export function calculateShortestPath(to, from, edgeData) {
         totalWeight += graph.getEdgeAttribute(edge, 'weight');
     }
 
-    return [path, totalWeight];
+    return [path.map(Number), totalWeight];
 }
 
 

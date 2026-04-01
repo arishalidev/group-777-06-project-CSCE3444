@@ -23,7 +23,7 @@ test('returns the shortest path between two nodes', () => {
     const [path] = calculateShortestPath('1', '2', edgeData);
 
     // Should not go directly from 1 -> 2
-    expect(path).toEqual(['1', '0', '2']);
+    expect(path).toEqual([1, 0, 2]);
 })
 
 test('returns the correct total weight for the shortest path', () => {
@@ -36,7 +36,7 @@ test('returns the correct total weight for the shortest path', () => {
 test('returns the shortest adjacent path', () => {
     const [path, weight] = calculateShortestPath('0', '2', edgeData);
 
-    expect(path).toEqual(['0', '2']);
+    expect(path).toEqual([0, 2]);
     expect(weight).toEqual(1);
 
 })

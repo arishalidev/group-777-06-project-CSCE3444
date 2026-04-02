@@ -41,17 +41,22 @@ app.get("/api/nodes/all", async (req, res) => {
 
         const edges = await getAllEdges();
 
-        const [path, weight] = calculateShortestPath(6, 16 ,edges);
+        const [path, weight] = calculateShortestPath(4, 20 ,edges);
         const nodesInPath = await getNodes(path);
-
 
         // Gets the coordinates from the nodes to draw lines between them on the map
         let lineCoords = [];
         for (let i = 1; i < path.length; i++) {
-            const lineStart = nodesInPath.find(node => node.properties.id === path[i]).geometry.coordinates;
-            const lineEnd = nodesInPath.find(node => node.properties.id === path[i - 1]).geometry.coordinates;
+            const lineStart = nodesInPath.find(node => node.properties.id === path[i]);
+            const lineEnd = nodesInPath.find(node => node.properties.id === path[i - 1]);
 
-            lineCoords.push([lineStart, lineEnd]);
+            // If either is undefined, node is missing in database
+            if(lineStart === undefined || lineEnd === undefined) {
+                console.error(`Could not find node ${path[i]} or node ${node.properties.id} in database!`);
+                continue;
+            }
+
+            lineCoords.push([lineStart.geometry.coordinates, lineEnd.geometry.coordinates]);
         }
 
         res.json({nodes: nodesInPath, lines: lineCoords});

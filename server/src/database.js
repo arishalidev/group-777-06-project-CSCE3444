@@ -39,3 +39,15 @@ export async function getAllEdges() {
     const nodes = db.collection('edges');
     return await nodes.find({}).toArray();
 }
+
+export async function getBuildingEntrances(buildingName) {
+
+    if (typeof buildingName !== 'string') {
+        throw new TypeError('Expected "buildingName" to be a string');
+    }
+
+    const db = client.db('campus_graph');
+    const nodes = db.collection('nodes');
+
+    return await nodes.find({type:'Feature','properties.type':'building entrance', 'properties.name': buildingName}).toArray();
+}

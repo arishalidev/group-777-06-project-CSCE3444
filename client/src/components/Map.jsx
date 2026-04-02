@@ -10,8 +10,25 @@ function MyMap() {
     const [nodes, setNodes] = useState([]);
     const [lines, setLines] = useState([]);
 
+
+    const routeInformation = {
+        start: {
+            coordinates: [-97.1480386, 33.2143161],
+            Name: "Hickory Hall"
+        },
+        end: {
+            coordinates: [-97.1473207, 33.2140128],
+            Name: "Auditorium Building"
+        }
+    }
+
+
     useEffect(() => {
-        fetch('http://localhost:5001/api/nodes/all')
+        fetch('http://localhost:5001/api/nodes/all', {
+            method: "GET",
+            headers: "application/json",
+            body: JSON.stringify(routeInformation)
+        })
             .then(res => res.json())
             .then(json => {
                 setNodes(json.nodes);

@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import {getAllEdges, getNodes, run} from './database.js'
 import { getWeatherAlerts } from "./weather.js";
-import {calculateShortestPath} from "./pathfinding.js";
+import { shortestPathBetweenBuildings} from "./pathfinding.js";
 
 const app = express();
 const PORT = 5001;
@@ -36,12 +36,12 @@ app.get("/api/weather/alerts", async (req, res) => {
 run().catch(console.dir);
 
 
-app.get("/api/nodes/all", async (req, res) => {
+app.get("/api/nodes", async (req, res) => {
     try {
-
         const edges = await getAllEdges();
 
-        const [path, weight] = calculateShortestPath(4, 20 ,edges);
+        const [path, weight] = await shortestPathBetweenBuildings(req.query.startName, req.query.endName, edges);
+
         const nodesInPath = await getNodes(path);
 
         // Gets the coordinates from the nodes to draw lines between them on the map
@@ -52,7 +52,7 @@ app.get("/api/nodes/all", async (req, res) => {
 
             // If either is undefined, node is missing in database
             if(lineStart === undefined || lineEnd === undefined) {
-                console.error(`Could not find node ${path[i]} or node ${node.properties.id} in database!`);
+                console.error(`Could not find node ${path[i]} or node ${path[i-1]} in database!`);
                 continue;
             }
 

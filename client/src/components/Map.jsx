@@ -13,23 +13,22 @@ function MyMap() {
 
     const routeInformation = {
         start: {
-            coordinates: [-97.1480386, 33.2143161],
-            Name: "Hickory Hall"
+            name: "Hickory Hall"
         },
         end: {
-            coordinates: [-97.1473207, 33.2140128],
-            Name: "Auditorium Building"
+            name: "Auditorium Building"
         }
     }
 
+    const params = new URLSearchParams({
+        startName: routeInformation.start.name,
+        endName: routeInformation.end.name
+    });
 
     useEffect(() => {
-        fetch('http://localhost:5001/api/nodes/all', {
-            method: "GET",
-            headers: "application/json",
-            body: JSON.stringify(routeInformation)
-        })
-            .then(res => res.json())
+        fetch(`http://localhost:5001/api/nodes?${params.toString()}`, {
+            method: "GET"
+        })            .then(res => res.json())
             .then(json => {
                 setNodes(json.nodes);
                 setLines(json.lines);

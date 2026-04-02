@@ -1,5 +1,6 @@
 import UndirectedGraph from 'graphology';
 import { dijkstra } from 'graphology-shortest-path';
+import { getBuildingEntrances} from "./database.js";
 
 export function calculateShortestPath(to, from, edgeData) {
     const graph = new UndirectedGraph();
@@ -20,4 +21,23 @@ export function calculateShortestPath(to, from, edgeData) {
     return [path.map(Number), totalWeight];
 }
 
+export async function shortestPathBetweenBuildings(startName, endName, edges) {
+    const startingBuildingEntrances = await getBuildingEntrances(startName);
+    const endingBuildingEntrances = await getBuildingEntrances(endName);
 
+    let shortestPath;
+    let shortestWeight = -1;
+    for(const startingBuildingEntrance of startingBuildingEntrances) {
+        for(const endingBuildingEntrance of endingBuildingEntrances) {
+            const [path, weight] = calculateShortestPath(startingBuildingEntrance.properties.id, endingBuildingEntrance.properties.id, edges);
+
+            if(weight < shortestWeight || shortestWeight === -1) {
+                shortestPath = path;
+                shortestWeight = weight;
+            }
+        }
+    }
+
+    return [shortestPath, shortestWeight];
+
+}

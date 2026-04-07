@@ -60,5 +60,29 @@ export async function getBuildingCoordinates(buildingAbbreviation) {
     const db = client.db('buildings');
     const buildings = db.collection('unt_main');
 
-    return await buildings.find({abbreviation: buildingAbbreviation}).toArray();
+    return await buildings.findOne({abbreviation: buildingAbbreviation});
+}
+
+
+export async function findClosestNode(lon, lat) {
+    if (typeof lon != 'number' || typeof lat != 'number') {
+        throw new TypeError('Expected "buildingAbbreviation" to be numbers');
+    }
+
+    const db = client.db('campus_graph');
+    const nodes = db.collection('nodes');
+
+    await nodes.createIndex({ geometry: '2dsphere' });
+
+
+    return nodes.findOne({
+        geometry: {
+            $nearSphere: {
+                $geometry: {
+                    type: "Point",
+                    coordinates: [lon, lat]
+                }
+            }
+        }
+    });
 }

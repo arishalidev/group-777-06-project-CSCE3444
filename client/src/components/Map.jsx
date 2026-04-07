@@ -13,16 +13,16 @@ function MyMap() {
 
     const routeInformation = {
         start: {
-            name: "Hickory Hall"
+            abbreviation: "ART"
         },
         end: {
-            name: "Auditorium Building"
+            abbreviation: "UU"
         }
     }
 
     const params = new URLSearchParams({
-        startName: routeInformation.start.name,
-        endName: routeInformation.end.name
+        start: routeInformation.start.abbreviation,
+        end: routeInformation.end.abbreviation
     });
 
     useEffect(() => {

@@ -10,7 +10,6 @@ export function calculateShortestPath(to, from, edgeData) {
     }
 
     const path = dijkstra.bidirectional(graph, to, from, 'weight');
-
     let totalWeight = 0;
 
     for (let i = 0; i < path.length - 1; i++) {

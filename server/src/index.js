@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import {getAllEdges, getNodes, run} from './database.js'
+import {findClosestNode, getAllEdges, getBuildingCoordinates, getNodes, run} from './database.js'
 import { getWeatherAlerts } from "./weather.js";
-import { shortestPathBetweenBuildings} from "./pathfinding.js";
+import {calculateShortestPath } from "./pathfinding.js";
 
 const app = express();
 const PORT = 5001;
@@ -40,8 +40,13 @@ app.get("/api/nodes", async (req, res) => {
     try {
         const edges = await getAllEdges();
 
-        const [path, weight] = await shortestPathBetweenBuildings(req.query.startName, req.query.endName, edges);
+        const startBuildingCoords = await getBuildingCoordinates(req.query.start);
+        const endBuildingCoords = await getBuildingCoordinates(req.query.end);
 
+        const startNode = await findClosestNode(startBuildingCoords.longitude, startBuildingCoords.latitude);
+        const endNode = await findClosestNode(endBuildingCoords.longitude, endBuildingCoords.latitude);
+
+        const [path, weight] = await calculateShortestPath(startNode.properties.id, endNode.properties.id, edges);
         const nodesInPath = await getNodes(path);
 
         // Gets the coordinates from the nodes to draw lines between them on the map

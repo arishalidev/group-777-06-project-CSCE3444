@@ -51,3 +51,14 @@ export async function getBuildingEntrances(buildingName) {
 
     return await nodes.find({type:'Feature','properties.type':'building entrance', 'properties.name': buildingName}).toArray();
 }
+
+export async function getBuildingCoordinates(buildingAbbreviation) {
+    if (typeof buildingAbbreviation != 'string') {
+        throw new TypeError('Expected "buildingAbbreviation" to be a string');
+    }
+
+    const db = client.db('buildings');
+    const buildings = db.collection('unt_main');
+
+    return await buildings.find({abbreviation: buildingAbbreviation}).toArray();
+}

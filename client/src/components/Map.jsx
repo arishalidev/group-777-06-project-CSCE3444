@@ -10,9 +10,25 @@ function MyMap() {
     const [nodes, setNodes] = useState([]);
     const [lines, setLines] = useState([]);
 
+
+    const routeInformation = {
+        start: {
+            abbreviation: "ART"
+        },
+        end: {
+            abbreviation: "UU"
+        }
+    }
+
+    const params = new URLSearchParams({
+        start: routeInformation.start.abbreviation,
+        end: routeInformation.end.abbreviation
+    });
+
     useEffect(() => {
-        fetch('http://localhost:5001/api/nodes/all')
-            .then(res => res.json())
+        fetch(`http://localhost:5001/api/nodes?${params.toString()}`, {
+            method: "GET"
+        })            .then(res => res.json())
             .then(json => {
                 setNodes(json.nodes);
                 setLines(json.lines);

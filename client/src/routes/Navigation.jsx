@@ -7,9 +7,11 @@ function Navigation() {
     const [startLocation, setStartLocation] = useState("");
     const [endLocation, setEndLocation] = useState("");
     const [showMap, setShowMap] = useState(false);
+    const [mapKey, setMapKey] = useState(0);
 
     function renderMap() {
         setShowMap(true);
+        setMapKey(k => k + 1);
     }
 
     return (
@@ -54,7 +56,7 @@ function Navigation() {
 
             {showMap && (
                 <div className={'flex justify-center'}>
-                    <MyMap startName={startLocation} endName={endLocation} />
+                    <MyMap key={mapKey} startName={startLocation} endName={endLocation} />
                 </div>
             )}
         </div>

@@ -1,0 +1,1911 @@
+{
+  "metadata": {
+    "institution": "University of North Texas",
+    "campus": "Main Campus - Denton, TX",
+    "source": "UNT Facilities Building Information (facilities.unt.edu)",
+    "notes": "Coordinates are approximate building centroids. Accessibility information reflects UNT ADA compliance standards; verify with UNT Disability Accommodation & Accessibility for specific needs.",
+    "total_buildings": 100,
+    "image_note": "Images sourced from Wikimedia Commons (CC BY-SA 4.0, Michael Barera, 2015). Null image fields indicate no freely-licensed photo was found.",
+    "images_linked": 14
+  },
+  "buildings": [
+    {
+      "name": "Auditorium-English Building",
+      "abbreviation": "AUDB",
+      "building_number": 102,
+      "building_type": "Academic",
+      "address": "1401 W. Hickory St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ground-floor accessible entry via ramp"
+      },
+      "latitude": 33.2141,
+      "longitude": -97.153,
+      "image": null
+    },
+    {
+      "name": "Business Leadership Building",
+      "abbreviation": "BLB",
+      "building_number": 156,
+      "building_type": "Academic",
+      "address": "1307 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Fully ADA compliant; elevator serves all floors"
+      },
+      "latitude": 33.2108,
+      "longitude": -97.1512,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/University_of_North_Texas_September_2015_06_(Business_Leadership_Building).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Chemistry Building",
+      "abbreviation": "CHEM",
+      "building_number": 112,
+      "building_type": "Academic / Research",
+      "address": "1508 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access to all floors"
+      },
+      "latitude": 33.2092,
+      "longitude": -97.1548,
+      "image": null
+    },
+    {
+      "name": "Dance and Theatre",
+      "abbreviation": "DATH",
+      "building_number": 159,
+      "building_type": "Academic / Arts",
+      "address": "300 Bernard St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "ADA accessible seating available in theatre"
+      },
+      "latitude": 33.2073,
+      "longitude": -97.143,
+      "image": null
+    },
+    {
+      "name": "Environmental Education, Science & Technology Building",
+      "abbreviation": "ENV",
+      "building_number": 160,
+      "building_type": "Academic / Research",
+      "address": "1704 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access to all floors"
+      },
+      "latitude": 33.2083,
+      "longitude": -97.1573,
+      "image": null
+    },
+    {
+      "name": "General Academic Building",
+      "abbreviation": "GAB",
+      "building_number": 108,
+      "building_type": "Academic",
+      "address": "225 S. Avenue B, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Central academic building; elevator access"
+      },
+      "latitude": 33.2107,
+      "longitude": -97.1488,
+      "image": null
+    },
+    {
+      "name": "Hickory Hall",
+      "abbreviation": "HKRY",
+      "building_number": 109,
+      "building_type": "Academic",
+      "address": "1417 W. Hickory St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Single-story building; ramp entry"
+      },
+      "latitude": 33.2142,
+      "longitude": -97.1479,
+      "image": null
+    },
+    {
+      "name": "Language Building",
+      "abbreviation": "LANG",
+      "building_number": 148,
+      "building_type": "Academic",
+      "address": "108 Avenue A, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access to upper floors"
+      },
+      "latitude": 33.2099,
+      "longitude": -97.1467,
+      "image": null
+    },
+    {
+      "name": "Life Sciences Complex",
+      "abbreviation": "LIFE",
+      "building_number": 141,
+      "building_type": "Academic / Research",
+      "address": "1511 W. Sycamore St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Modern building; fully ADA compliant"
+      },
+      "latitude": 33.2083,
+      "longitude": -97.1547,
+      "image": null
+    },
+    {
+      "name": "Marquis Hall",
+      "abbreviation": "MARQ",
+      "building_number": 130,
+      "building_type": "Academic",
+      "address": "1511 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator and ramp access"
+      },
+      "latitude": 33.2099,
+      "longitude": -97.1545,
+      "image": null
+    },
+    {
+      "name": "Matthews Hall",
+      "abbreviation": "MATT",
+      "building_number": 106,
+      "building_type": "Academic / Administration",
+      "address": "1300 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access; holds College of Education offices"
+      },
+      "latitude": 33.211,
+      "longitude": -97.1509,
+      "image": null
+    },
+    {
+      "name": "Matthews Hall Annex",
+      "abbreviation": "MHA",
+      "building_number": 137,
+      "building_type": "Academic / Administration",
+      "address": "1180 Union Circle, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Single-story annex; ramp entry"
+      },
+      "latitude": 33.2112,
+      "longitude": -97.1498,
+      "image": null
+    },
+    {
+      "name": "Music Building",
+      "abbreviation": "MUSI",
+      "building_number": 127,
+      "building_type": "Academic / Arts",
+      "address": "415 S. Avenue C, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Performance halls have ADA seating; elevator access"
+      },
+      "latitude": 33.2084,
+      "longitude": -97.1477,
+      "image": null
+    },
+    {
+      "name": "Music Annex",
+      "abbreviation": "MUSA",
+      "building_number": 115,
+      "building_type": "Academic / Arts",
+      "address": "1630 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry; ground floor only"
+      },
+      "latitude": 33.2118,
+      "longitude": -97.1558,
+      "image": null
+    },
+    {
+      "name": "Music Practice North",
+      "abbreviation": "MPN",
+      "building_number": 124,
+      "building_type": "Academic / Arts",
+      "address": "502 S. Avenue C, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": false,
+        "accessible_parking_nearby": true,
+        "notes": "Small practice facility; ramp entry"
+      },
+      "latitude": 33.2079,
+      "longitude": -97.1476,
+      "image": null
+    },
+    {
+      "name": "Music Practice South",
+      "abbreviation": "MPS",
+      "building_number": 125,
+      "building_type": "Academic / Arts",
+      "address": "510 S. Avenue C, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": false,
+        "accessible_parking_nearby": true,
+        "notes": "Small practice facility; ramp entry"
+      },
+      "latitude": 33.2077,
+      "longitude": -97.1476,
+      "image": null
+    },
+    {
+      "name": "Physics Building",
+      "abbreviation": "PHYS",
+      "building_number": 119,
+      "building_type": "Academic / Research",
+      "address": "210 Avenue A, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator to all floors; houses Ion Beam Laboratory"
+      },
+      "latitude": 33.21,
+      "longitude": -97.1469,
+      "image": null
+    },
+    {
+      "name": "Radio, TV, Film & Performing Arts",
+      "abbreviation": "RTFP",
+      "building_number": 140,
+      "building_type": "Academic / Arts",
+      "address": "1179 Union Circle, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Modern facility; fully ADA compliant"
+      },
+      "latitude": 33.211,
+      "longitude": -97.1496,
+      "image": null
+    },
+    {
+      "name": "Science Research Building",
+      "abbreviation": "SRB",
+      "building_number": 103,
+      "building_type": "Academic / Research",
+      "address": "1504 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access to all floors"
+      },
+      "latitude": 33.2092,
+      "longitude": -97.1544,
+      "image": null
+    },
+    {
+      "name": "Sycamore Hall",
+      "abbreviation": "SYMR",
+      "building_number": 111,
+      "building_type": "Academic / Library",
+      "address": "307 S. Avenue B, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Houses Eagle Commons Library; elevator access"
+      },
+      "latitude": 33.2093,
+      "longitude": -97.1488,
+      "image": null
+    },
+    {
+      "name": "Terrill Hall",
+      "abbreviation": "TH",
+      "building_number": 131,
+      "building_type": "Academic",
+      "address": "1611 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry available"
+      },
+      "latitude": 33.2092,
+      "longitude": -97.1558,
+      "image": null
+    },
+    {
+      "name": "Wooten Hall",
+      "abbreviation": "WH",
+      "building_number": 150,
+      "building_type": "Academic",
+      "address": "1121 Union Circle, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access; Political Science, History dept"
+      },
+      "latitude": 33.2105,
+      "longitude": -97.15,
+      "image": null
+    },
+    {
+      "name": "Art Building",
+      "abbreviation": "ART",
+      "building_number": 153,
+      "building_type": "Academic / Arts",
+      "address": "1201 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access; main studio/gallery building"
+      },
+      "latitude": 33.2096,
+      "longitude": -97.1516,
+      "image": null
+    },
+    {
+      "name": "Art Annex",
+      "abbreviation": "ARTF",
+      "building_number": 157,
+      "building_type": "Academic / Arts",
+      "address": "1001 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ground-floor studio space; ramp entry"
+      },
+      "latitude": 33.2097,
+      "longitude": -97.15,
+      "image": null
+    },
+    {
+      "name": "Performing Arts Center (Murchison)",
+      "abbreviation": "PAC",
+      "building_number": 129,
+      "building_type": "Arts / Performance Venue",
+      "address": "2100 N. I-35E, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "ADA seating in all performance halls; elevator access"
+      },
+      "latitude": 33.2183,
+      "longitude": -97.1428,
+      "image": null
+    },
+    {
+      "name": "Performing Arts Annex",
+      "abbreviation": "PACX",
+      "building_number": 306,
+      "building_type": "Arts / Support",
+      "address": "2210 N. I-35E, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Support facility for PAC"
+      },
+      "latitude": 33.2193,
+      "longitude": -97.1427,
+      "image": null
+    },
+    {
+      "name": "Welch Street Complex 1 (Fashion and Fibers)",
+      "abbreviation": "WSC1",
+      "building_number": 158,
+      "building_type": "Academic / Arts",
+      "address": "405 S. Welch St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry to main floor"
+      },
+      "latitude": 33.2065,
+      "longitude": -97.1445,
+      "image": null
+    },
+    {
+      "name": "Welch Street Complex 2 (Counseling and Higher Education)",
+      "abbreviation": "WSC2",
+      "building_number": 139,
+      "building_type": "Academic / Administrative",
+      "address": "425 S. Welch St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2063,
+      "longitude": -97.1445,
+      "image": null
+    },
+    {
+      "name": "Hurley Administration Building",
+      "abbreviation": "ADMN",
+      "building_number": 101,
+      "building_type": "Administration",
+      "address": "1501 W. Chestnut St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Main admin building; elevator to all floors"
+      },
+      "latitude": 33.2127,
+      "longitude": -97.1546,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/University_of_North_Texas_September_2015_11_(Hurley_Administration_Building).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Eagle Student Services Center",
+      "abbreviation": "ESSC",
+      "building_number": 113,
+      "building_type": "Administration / Student Services",
+      "address": "1147 Union Circle, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Fully ADA compliant; central student services hub"
+      },
+      "latitude": 33.2107,
+      "longitude": -97.1494,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/University_of_North_Texas_September_2015_13_(Eagle_Student_Services_Center).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Gateway Center",
+      "abbreviation": "GATE",
+      "building_number": 161,
+      "building_type": "Administration / Event Space",
+      "address": "801 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Conference and event venue; fully accessible"
+      },
+      "latitude": 33.213,
+      "longitude": -97.1443,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/University_of_North_Texas_September_2015_62_(Gateway_Center).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Sage Hall",
+      "abbreviation": "SAGE",
+      "building_number": 104,
+      "building_type": "Administration / Academic",
+      "address": "1167 Union Circle, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access; Provost and academic offices"
+      },
+      "latitude": 33.2107,
+      "longitude": -97.1495,
+      "image": null
+    },
+    {
+      "name": "Support Services Building",
+      "abbreviation": "SSB",
+      "building_number": 314,
+      "building_type": "Administration / Services",
+      "address": "1500 IH 35, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry; administrative support offices"
+      },
+      "latitude": 33.2076,
+      "longitude": -97.1428,
+      "image": null
+    },
+    {
+      "name": "University Services Building",
+      "abbreviation": "USB",
+      "building_number": 26,
+      "building_type": "Administration / Services",
+      "address": "2310 N. I-35E, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.22,
+      "longitude": -97.1424,
+      "image": null
+    },
+    {
+      "name": "Welcome Center",
+      "abbreviation": "WCTR",
+      "building_number": 169,
+      "building_type": "Administration / Visitor Services",
+      "address": "1417 Maple St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Fully accessible visitor facility"
+      },
+      "latitude": 33.2118,
+      "longitude": -97.1521,
+      "image": null
+    },
+    {
+      "name": "Risk Management Center",
+      "abbreviation": "WGHT",
+      "building_number": 310,
+      "building_type": "Administration",
+      "address": "700 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2125,
+      "longitude": -97.1438,
+      "image": null
+    },
+    {
+      "name": "Sullivant Public Safety Center",
+      "abbreviation": "POLI",
+      "building_number": 313,
+      "building_type": "Public Safety",
+      "address": "1700 Wilshire St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "UNT Police headquarters; accessible entry"
+      },
+      "latitude": 33.2044,
+      "longitude": -97.1539,
+      "image": null
+    },
+    {
+      "name": "University Machine Shop",
+      "abbreviation": "UMS",
+      "building_number": 31,
+      "building_type": "Facilities / Support",
+      "address": "915 W. Mulberry St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": false,
+        "accessible_parking_nearby": true,
+        "notes": "Industrial shop; accessible entry"
+      },
+      "latitude": 33.2097,
+      "longitude": -97.1499,
+      "image": null
+    },
+    {
+      "name": "Willis Library",
+      "abbreviation": "LIBR",
+      "building_number": 149,
+      "building_type": "Library",
+      "address": "1506 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "assistive_technology": true,
+        "notes": "5-story main library; elevator to all floors; assistive tech lab; accessible study rooms"
+      },
+      "latitude": 33.2118,
+      "longitude": -97.1543,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/University_of_North_Texas_September_2015_12_(Willis_Library).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Research Collections Library",
+      "abbreviation": "WTWH",
+      "building_number": 751,
+      "building_type": "Library / Storage",
+      "address": "2600 North I-35, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Off-site library storage facility"
+      },
+      "latitude": 33.2248,
+      "longitude": -97.1418,
+      "image": null
+    },
+    {
+      "name": "University Union",
+      "abbreviation": "UU",
+      "building_number": 155,
+      "building_type": "Student Life / Dining",
+      "address": "1155 Union Circle, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Central hub; fully ADA compliant; elevator access"
+      },
+      "latitude": 33.2103,
+      "longitude": -97.1492,
+      "image": null
+    },
+    {
+      "name": "Pohl Recreation Center",
+      "abbreviation": "RECS",
+      "building_number": 118,
+      "building_type": "Recreation",
+      "address": "1900 Chestnut St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_equipment": true,
+        "notes": "Adaptive fitness equipment; elevator access; accessible pool entry"
+      },
+      "latitude": 33.2131,
+      "longitude": -97.1575,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/University_of_North_Texas_September_2015_22_(Pohl_Recreation_Center).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Physical Education Building",
+      "abbreviation": "PEB",
+      "building_number": 117,
+      "building_type": "Academic / Recreation",
+      "address": "1921 Chestnut St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry; accessible gym areas"
+      },
+      "latitude": 33.2133,
+      "longitude": -97.1579,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/University_of_North_Texas_September_2015_21_(Physical_Education_Building).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Greek Life Center",
+      "abbreviation": "GLC",
+      "building_number": 315,
+      "building_type": "Student Life",
+      "address": "621 S. Welch St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2059,
+      "longitude": -97.1447,
+      "image": null
+    },
+    {
+      "name": "Goolsby Chapel",
+      "abbreviation": "CHAP",
+      "building_number": 184,
+      "building_type": "Student Life / Religious",
+      "address": "1622 Maple St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "ADA accessible seating in chapel"
+      },
+      "latitude": 33.212,
+      "longitude": -97.1528,
+      "image": null
+    },
+    {
+      "name": "Speech & Hearing Clinic",
+      "abbreviation": "SPHS",
+      "building_number": 332,
+      "building_type": "Clinical / Academic",
+      "address": "907 W. Sycamore St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Clinical facility; accessible entry"
+      },
+      "latitude": 33.2092,
+      "longitude": -97.15,
+      "image": null
+    },
+    {
+      "name": "Kristin Farmer Autism Center",
+      "abbreviation": "KFAC",
+      "building_number": 138,
+      "building_type": "Clinical / Research",
+      "address": "490 South I-35E, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Fully accessible; sensory-friendly design features"
+      },
+      "latitude": 33.2071,
+      "longitude": -97.1422,
+      "image": null
+    },
+    {
+      "name": "UNT CoLab",
+      "abbreviation": "NTCL",
+      "building_number": 165,
+      "building_type": "Innovation / Co-working",
+      "address": "207 N. Elm St. Suite 101, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Downtown Denton location; fully ADA compliant"
+      },
+      "latitude": 33.2155,
+      "longitude": -97.1335,
+      "image": null
+    },
+    {
+      "name": "Eagle Landing",
+      "abbreviation": "EAGL",
+      "building_number": 188,
+      "building_type": "Student Life / Dining",
+      "address": "1416 Maple St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Dining and student services; ramp entry"
+      },
+      "latitude": 33.2116,
+      "longitude": -97.1524,
+      "image": null
+    },
+    {
+      "name": "Bain Hall",
+      "abbreviation": "BAIN",
+      "building_number": 122,
+      "building_type": "Residential",
+      "address": "1820 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "ADA-designated rooms available; elevator access"
+      },
+      "latitude": 33.2122,
+      "longitude": -97.1573,
+      "image": null
+    },
+    {
+      "name": "Bruce Hall",
+      "abbreviation": "BRUC",
+      "building_number": 175,
+      "building_type": "Residential",
+      "address": "1624 Chestnut St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Oldest residence hall; elevator and ADA rooms available"
+      },
+      "latitude": 33.2125,
+      "longitude": -97.1556,
+      "image": null
+    },
+    {
+      "name": "Chestnut Hall",
+      "abbreviation": "CHNT",
+      "building_number": 136,
+      "building_type": "Residential",
+      "address": "1800 Chestnut St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Elevator access; ADA rooms available"
+      },
+      "latitude": 33.2126,
+      "longitude": -97.1569,
+      "image": null
+    },
+    {
+      "name": "Chilton Hall",
+      "abbreviation": "CHIL",
+      "building_number": 126,
+      "building_type": "Residential",
+      "address": "410 S. Avenue C, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Elevator access; Media Library on lower level"
+      },
+      "latitude": 33.2083,
+      "longitude": -97.1476,
+      "image": null
+    },
+    {
+      "name": "Clark Hall",
+      "abbreviation": "CLAR",
+      "building_number": 177,
+      "building_type": "Residential",
+      "address": "1717 Maple St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Emerald Eagle Scholars; elevator and ADA rooms"
+      },
+      "latitude": 33.212,
+      "longitude": -97.1538,
+      "image": null
+    },
+    {
+      "name": "Crumley Hall",
+      "abbreviation": "CRUM",
+      "building_number": 178,
+      "building_type": "Residential",
+      "address": "1621 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Houses Housing & Dining central offices; elevator access"
+      },
+      "latitude": 33.2117,
+      "longitude": -97.1555,
+      "image": null
+    },
+    {
+      "name": "Curry Hall",
+      "abbreviation": "CURY",
+      "building_number": 107,
+      "building_type": "Residential / Academic",
+      "address": "200 Avenue A, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Elevator access; ADA rooms available"
+      },
+      "latitude": 33.2094,
+      "longitude": -97.1466,
+      "image": null
+    },
+    {
+      "name": "Honors Hall",
+      "abbreviation": "HNRS",
+      "building_number": 171,
+      "building_type": "Residential",
+      "address": "1716 Eagle Drive, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Honors College residence; elevator and ADA rooms"
+      },
+      "latitude": 33.2122,
+      "longitude": -97.154,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/University_of_North_Texas_September_2015_66_(Honors_Hall).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Joe Greene Hall",
+      "abbreviation": "JGH",
+      "building_number": 168,
+      "building_type": "Residential",
+      "address": "800 Ave A, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Modern residence hall; fully ADA compliant"
+      },
+      "latitude": 33.2118,
+      "longitude": -97.1448,
+      "image": null
+    },
+    {
+      "name": "Kerr Hall",
+      "abbreviation": "KERR",
+      "building_number": 180,
+      "building_type": "Residential",
+      "address": "1413 Maple St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Largest residence hall on campus; elevator access"
+      },
+      "latitude": 33.2116,
+      "longitude": -97.152,
+      "image": null
+    },
+    {
+      "name": "Legends Hall",
+      "abbreviation": "LGNS",
+      "building_number": 172,
+      "building_type": "Residential",
+      "address": "221 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Newer residence hall; fully ADA compliant"
+      },
+      "latitude": 33.2148,
+      "longitude": -97.1438,
+      "image": null
+    },
+    {
+      "name": "Maple Hall",
+      "abbreviation": "MAPL",
+      "building_number": 182,
+      "building_type": "Residential",
+      "address": "1621 Maple St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Elevator access; ADA rooms available"
+      },
+      "latitude": 33.212,
+      "longitude": -97.1531,
+      "image": null
+    },
+    {
+      "name": "McConnell Hall",
+      "abbreviation": "MCON",
+      "building_number": 176,
+      "building_type": "Residential",
+      "address": "1705 W. Sycamore St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "TAMS student residence; elevator access"
+      },
+      "latitude": 33.21,
+      "longitude": -97.1564,
+      "image": null
+    },
+    {
+      "name": "Mozart Square",
+      "abbreviation": "MOZA",
+      "building_number": 186,
+      "building_type": "Residential",
+      "address": "911 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Near Honors Hall; elevator access"
+      },
+      "latitude": 33.2128,
+      "longitude": -97.1448,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/University_of_North_Texas_September_2015_63_(Mozart_Square).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "North Texas Lofts",
+      "abbreviation": "RMOF",
+      "building_number": 864,
+      "building_type": "Residential",
+      "address": "217 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Apartment-style housing; elevator access"
+      },
+      "latitude": 33.2146,
+      "longitude": -97.1437,
+      "image": null
+    },
+    {
+      "name": "Rawlins Hall",
+      "abbreviation": "RLNS",
+      "building_number": 173,
+      "building_type": "Residential",
+      "address": "1815 Maple St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Elevator access; ADA rooms available"
+      },
+      "latitude": 33.2124,
+      "longitude": -97.1546,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/University_of_North_Texas_September_2015_65_(Rawlins_Hall).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Santa Fe Square Hall",
+      "abbreviation": "SFE",
+      "building_number": 185,
+      "building_type": "Residential",
+      "address": "2201 W. Prairie St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Suite-style hall; elevator access"
+      },
+      "latitude": 33.2167,
+      "longitude": -97.1571,
+      "image": null
+    },
+    {
+      "name": "Traditions Hall",
+      "abbreviation": "TRAD",
+      "building_number": 187,
+      "building_type": "Residential",
+      "address": "502 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Modern facility; fully ADA compliant"
+      },
+      "latitude": 33.2112,
+      "longitude": -97.1436,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/University_of_North_Texas_September_2015_25_(Traditions_Hall).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Victory Hall",
+      "abbreviation": "VICT",
+      "building_number": 189,
+      "building_type": "Residential",
+      "address": "1379 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Near athletics complex; elevator and ADA rooms"
+      },
+      "latitude": 33.2017,
+      "longitude": -97.1466,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/University_of_North_Texas_September_2015_54_(Victory_Hall).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "West Hall",
+      "abbreviation": "WEST",
+      "building_number": 181,
+      "building_type": "Residential",
+      "address": "320 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_rooms": true,
+        "notes": "Elevator access; ADA rooms available"
+      },
+      "latitude": 33.2142,
+      "longitude": -97.1438,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/University_of_North_Texas_September_2015_24_(West_Hall).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Sorority Row House A",
+      "abbreviation": "SORA",
+      "building_number": 350,
+      "building_type": "Residential / Greek Life",
+      "address": "510 Bernard St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.207,
+      "longitude": -97.1435,
+      "image": null
+    },
+    {
+      "name": "Sorority Row House B",
+      "abbreviation": "SORB",
+      "building_number": 351,
+      "building_type": "Residential / Greek Life",
+      "address": "905 W. Prairie St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.206,
+      "longitude": -97.1498,
+      "image": null
+    },
+    {
+      "name": "Sorority Row House C",
+      "abbreviation": "SORC",
+      "building_number": 352,
+      "building_type": "Residential / Greek Life",
+      "address": "911 W. Prairie St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.206,
+      "longitude": -97.15,
+      "image": null
+    },
+    {
+      "name": "Sorority Row House D",
+      "abbreviation": "SORD",
+      "building_number": 353,
+      "building_type": "Residential / Greek Life",
+      "address": "917 W. Prairie St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.206,
+      "longitude": -97.1501,
+      "image": null
+    },
+    {
+      "name": "Sorority Row House E",
+      "abbreviation": "SORE",
+      "building_number": 354,
+      "building_type": "Residential / Greek Life",
+      "address": "923 W. Prairie St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.206,
+      "longitude": -97.1503,
+      "image": null
+    },
+    {
+      "name": "Sorority Row House F",
+      "abbreviation": "SORF",
+      "building_number": 355,
+      "building_type": "Residential / Greek Life",
+      "address": "994 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2074,
+      "longitude": -97.1502,
+      "image": null
+    },
+    {
+      "name": "Sorority Row House G",
+      "abbreviation": "SORG",
+      "building_number": 356,
+      "building_type": "Residential / Greek Life",
+      "address": "990 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2074,
+      "longitude": -97.1501,
+      "image": null
+    },
+    {
+      "name": "DATCU Stadium",
+      "abbreviation": "MGFS",
+      "building_number": 322,
+      "building_type": "Athletics / Stadium",
+      "address": "1251 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_seating": true,
+        "notes": "ADA seating areas; elevator access; accessible concessions"
+      },
+      "latitude": 33.2035,
+      "longitude": -97.147,
+      "image": null
+    },
+    {
+      "name": "Athletic Center",
+      "abbreviation": "ATHC",
+      "building_number": 320,
+      "building_type": "Athletics",
+      "address": "1301 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Elevator access; accessible locker rooms"
+      },
+      "latitude": 33.2028,
+      "longitude": -97.147,
+      "image": null
+    },
+    {
+      "name": "Coliseum",
+      "abbreviation": "COL",
+      "building_number": 154,
+      "building_type": "Athletics / Arena",
+      "address": "601 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_seating": true,
+        "notes": "Basketball arena; ADA seating; elevator access"
+      },
+      "latitude": 33.2124,
+      "longitude": -97.1438,
+      "image": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/University_of_North_Texas_September_2015_28_(UNT_Coliseum).jpg",
+        "image_credit": "Michael Barera",
+        "image_license": "CC BY-SA 4.0",
+        "image_source": "Wikimedia Commons"
+      }
+    },
+    {
+      "name": "Field House",
+      "abbreviation": "FDHS",
+      "building_number": 308,
+      "building_type": "Athletics",
+      "address": "704 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry; accessible restrooms"
+      },
+      "latitude": 33.2127,
+      "longitude": -97.144,
+      "image": null
+    },
+    {
+      "name": "Ken Bahnsen Gym",
+      "abbreviation": "MGYM",
+      "building_number": 116,
+      "building_type": "Athletics / Recreation",
+      "address": "1908 W. Highland St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry; accessible gym floor"
+      },
+      "latitude": 33.2128,
+      "longitude": -97.1578,
+      "image": null
+    },
+    {
+      "name": "Air Force ROTC",
+      "abbreviation": "ATH1",
+      "building_number": 305,
+      "building_type": "Academic / Military",
+      "address": "712 North Texas Blvd., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2126,
+      "longitude": -97.144,
+      "image": null
+    },
+    {
+      "name": "Bruzzy's Golf Practice Facility",
+      "abbreviation": "GPF",
+      "building_number": 327,
+      "building_type": "Athletics",
+      "address": "1419 Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Accessible practice areas"
+      },
+      "latitude": 33.2022,
+      "longitude": -97.1468,
+      "image": null
+    },
+    {
+      "name": "Ernie Kuehne Basketball Practice Facility",
+      "abbreviation": "MGSG",
+      "building_number": 456,
+      "building_type": "Athletics",
+      "address": "1532 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Accessible entry and restrooms"
+      },
+      "latitude": 33.2011,
+      "longitude": -97.1467,
+      "image": null
+    },
+    {
+      "name": "Lovelace & McNatt Families Practice Facility",
+      "abbreviation": "LMPF",
+      "building_number": 309,
+      "building_type": "Athletics",
+      "address": "1307 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Indoor practice facility; accessible entry"
+      },
+      "latitude": 33.2029,
+      "longitude": -97.1469,
+      "image": null
+    },
+    {
+      "name": "Olympic Sports Complex",
+      "abbreviation": "MGOG",
+      "building_number": 457,
+      "building_type": "Athletics",
+      "address": "1536 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Accessible spectator areas"
+      },
+      "latitude": 33.2009,
+      "longitude": -97.1467,
+      "image": null
+    },
+    {
+      "name": "Track and Soccer Complex",
+      "abbreviation": "TRFD",
+      "building_number": 323,
+      "building_type": "Athletics",
+      "address": "1801 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_seating": true,
+        "notes": "Accessible spectator seating areas"
+      },
+      "latitude": 33.1993,
+      "longitude": -97.1466,
+      "image": null
+    },
+    {
+      "name": "Waranch Tennis Complex",
+      "abbreviation": "TENN",
+      "building_number": 304,
+      "building_type": "Athletics",
+      "address": "1499 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "accessible_seating": true,
+        "notes": "Accessible spectator areas"
+      },
+      "latitude": 33.2024,
+      "longitude": -97.1467,
+      "image": null
+    },
+    {
+      "name": "Mean Green Village Building B - College of Education",
+      "abbreviation": "MGVB",
+      "building_number": 451,
+      "building_type": "Academic / Athletics Support",
+      "address": "1508 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Accessible entry"
+      },
+      "latitude": 33.2015,
+      "longitude": -97.1467,
+      "image": null
+    },
+    {
+      "name": "Mean Green Village Building C (Provost Office)",
+      "abbreviation": "MGVC",
+      "building_number": 452,
+      "building_type": "Administration",
+      "address": "1528 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Accessible entry"
+      },
+      "latitude": 33.2013,
+      "longitude": -97.1467,
+      "image": null
+    },
+    {
+      "name": "Gayle and Virgil Strange Student Athlete Advisory Center (SAAC)",
+      "abbreviation": "SAAC",
+      "building_number": 460,
+      "building_type": "Athletics / Student Services",
+      "address": "1524 S. Bonnie Brae St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Accessible entry and restrooms"
+      },
+      "latitude": 33.2013,
+      "longitude": -97.1468,
+      "image": null
+    },
+    {
+      "name": "Facilities Office Building",
+      "abbreviation": "PPOF",
+      "building_number": 11,
+      "building_type": "Facilities / Operations",
+      "address": "2204 W. Prairie St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Administrative offices for Facilities dept"
+      },
+      "latitude": 33.2173,
+      "longitude": -97.1578,
+      "image": null
+    },
+    {
+      "name": "Alumni Pavilion",
+      "abbreviation": "APAV",
+      "building_number": 319,
+      "building_type": "Event Space / Alumni",
+      "address": "2323 N. I-35E, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Outdoor pavilion with accessible pathways"
+      },
+      "latitude": 33.2198,
+      "longitude": -97.1425,
+      "image": null
+    },
+    {
+      "name": "Highland Street Parking Garage",
+      "abbreviation": "HSPG",
+      "building_number": 2,
+      "building_type": "Parking Structure",
+      "address": "621 Avenue A, Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": false,
+        "accessible_parking_nearby": true,
+        "ada_parking_spaces": true,
+        "notes": "ADA-designated parking on each level; elevator access"
+      },
+      "latitude": 33.2105,
+      "longitude": -97.1452,
+      "image": null
+    },
+    {
+      "name": "Union Circle Parking Garage",
+      "abbreviation": "UCPG",
+      "building_number": 1,
+      "building_type": "Parking Structure",
+      "address": "350 Welch St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": true,
+        "accessible_restroom": false,
+        "accessible_parking_nearby": true,
+        "ada_parking_spaces": true,
+        "notes": "ADA-designated parking on each level; elevator access"
+      },
+      "latitude": 33.2083,
+      "longitude": -97.1446,
+      "image": null
+    },
+    {
+      "name": "Oak Street Hall Annex",
+      "abbreviation": "OSHA",
+      "building_number": 134,
+      "building_type": "Academic / Administrative",
+      "address": "1110 W. Oak St., Denton, TX 76201",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2135,
+      "longitude": -97.1507,
+      "image": null
+    },
+    {
+      "name": "Woodhill Square Building 1",
+      "abbreviation": "WHS1",
+      "building_number": 601,
+      "building_type": "Academic / Administrative",
+      "address": "1100 Dallas Drive, Denton, TX 76205",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Off-main-campus administrative offices; ramp entry"
+      },
+      "latitude": 33.2217,
+      "longitude": -97.1255,
+      "image": null
+    },
+    {
+      "name": "Woodhill Square Building 2",
+      "abbreviation": "WHS2",
+      "building_number": 602,
+      "building_type": "Academic / Administrative",
+      "address": "1104 Dallas Drive, Denton, TX 76205",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2217,
+      "longitude": -97.1253,
+      "image": null
+    },
+    {
+      "name": "Woodhill Square Building 3",
+      "abbreviation": "WHS3",
+      "building_number": 603,
+      "building_type": "Academic / Administrative",
+      "address": "1108 Dallas Drive, Denton, TX 76205",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2217,
+      "longitude": -97.1251,
+      "image": null
+    },
+    {
+      "name": "Woodhill Square Building 4",
+      "abbreviation": "WHS4",
+      "building_number": 604,
+      "building_type": "Academic / Administrative",
+      "address": "1112 Dallas Drive, Denton, TX 76205",
+      "accessibility": {
+        "wheelchair_accessible": true,
+        "ramp": true,
+        "elevator": false,
+        "accessible_restroom": true,
+        "accessible_parking_nearby": true,
+        "notes": "Ramp entry"
+      },
+      "latitude": 33.2217,
+      "longitude": -97.1249,
+      "image": null
+    }
+  ]
+}

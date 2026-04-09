@@ -4,19 +4,18 @@ import L from 'leaflet';
 
 import {useEffect, useState} from "react";
 
-function MyMap() {
+function MyMap({ startName, endName }) {
     const startingPosition = [33.214587, -97.148325]; // Latitude, Longitude
 
     const [nodes, setNodes] = useState([]);
     const [lines, setLines] = useState([]);
 
-
     const routeInformation = {
         start: {
-            abbreviation: "ART"
+            abbreviation: startName
         },
         end: {
-            abbreviation: "UU"
+            abbreviation: endName
         }
     }
 

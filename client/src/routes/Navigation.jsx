@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar.jsx";
 import MyMap from "../components/Map.jsx";
-import {useState} from "react";
+import WeatherAlertModal from "../components/WeatherAlertModal.jsx";
+import { useState } from "react";
 
 function Navigation() {
 
@@ -8,6 +9,7 @@ function Navigation() {
     const [endLocation, setEndLocation] = useState("");
     const [showMap, setShowMap] = useState(false);
     const [mapKey, setMapKey] = useState(0);
+    const [showAlerts, setShowAlerts] = useState(false);
 
     function renderMap() {
         setShowMap(true);
@@ -16,7 +18,7 @@ function Navigation() {
 
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar />
             <div className={'py-24'}>
                 <h1 className={'text-6xl text-center'}>Navigation Page</h1>
             </div>
@@ -49,9 +51,20 @@ function Navigation() {
                     <button
                         className={'bg-green-500 rounded p-4 hover:bg-green-600 border-2'}
                         onClick={renderMap}
-                    >Start Navigation</button>
+                    >
+                        Start Navigation
+                    </button>
                 </div>
 
+                <div className={'mx-6'}>
+                    <h3 className={'text-xl invisible'}>Alerts:</h3>
+                    <button
+                        className={'bg-amber-500 hover:bg-amber-600 text-white font-medium rounded p-4 border-2 border-amber-600'}
+                        onClick={() => setShowAlerts(true)}
+                    >
+                        ⚠️ Weather Alerts
+                    </button>
+                </div>
             </div>
 
             {showMap && (
@@ -59,9 +72,15 @@ function Navigation() {
                     <MyMap key={mapKey} startName={startLocation} endName={endLocation} />
                 </div>
             )}
-        </div>
-    )
 
+            {showAlerts && (
+                <WeatherAlertModal
+                    defaultState="TX"
+                    onClose={() => setShowAlerts(false)}
+                />
+            )}
+        </div>
+    );
 }
 
-export default Navigation
+export default Navigation;

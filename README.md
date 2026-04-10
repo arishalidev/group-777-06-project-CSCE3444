@@ -24,9 +24,20 @@ Features Implemented:
 <br> - App environment setup
 <br> - Navigation Bar
 
+![search](./screenshots/navbar.png)
+
 <h2>Sprint 2</h2>
 Features Implemented:
 <br> - Search bar
+
+![search](./screenshots/search.png)
+
 <br> - Navigation between buildings
+
+![navigation](./screenshots/navigation.png)
+
 <br> - Weather Alerts
+
+![weather](./screenshots/weather.png)
+
 

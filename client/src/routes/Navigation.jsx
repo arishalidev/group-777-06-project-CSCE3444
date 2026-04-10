@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar.jsx";
 import MyMap from "../components/Map.jsx";
-import WeatherAlertModal from "../components/WeatherAlertModal.jsx";
+import WeatherAlertComponent from "../components/WeatherAlertComponent.jsx";
 import { useState } from "react";
 
 function Navigation() {
@@ -74,7 +74,7 @@ function Navigation() {
             )}
 
             {showAlerts && (
-                <WeatherAlertModal
+                <WeatherAlertComponent
                     defaultState="TX"
                     onClose={() => setShowAlerts(false)}
                 />

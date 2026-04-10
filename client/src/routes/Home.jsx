@@ -19,8 +19,8 @@ function Home() {
         <div>
             <Navbar></Navbar>
             <div className={'py-24'}>
-                <h1 className={'text-6xl text-center pb-12'}>Home Page</h1>
-                <p className={'text-2xl text-center'}> Server Status: <strong>{data}</strong></p>
+                <h1 className={'text-6xl text-center pb-12'}>Home</h1>
+                <p className={'text-2xl text-center'}>Welcome to NavSense, routing made easy</p>
             </div>
         </div>
     )

@@ -68,7 +68,7 @@ function Navigation() {
             </div>
 
             {showMap && (
-                <div className={'flex justify-center'}>
+                <div className={'flex justify-center m-24'}>
                     <MyMap key={mapKey} startName={startLocation} endName={endLocation} />
                 </div>
             )}

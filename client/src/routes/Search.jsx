@@ -19,7 +19,7 @@ function Search() {
         <Navbar></Navbar>
 
         <div className={'py-24'}>
-            <h1 className= {'text-6x1 text-center pb-12'}>Search Page</h1>
+            <h1 className= {'text-6xl text-center pb-12'}>Search Page</h1>
 
             <div className="max-w-2xl mx-auto px-4">
                 <input

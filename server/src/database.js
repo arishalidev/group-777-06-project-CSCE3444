@@ -2,9 +2,9 @@ import 'dotenv/config'
 import {MongoClient, ServerApiVersion} from "mongodb";
 
 // Database Connection
-const uri = process.env.DATABASE_URL
+const url = process.env.DATABASE_URL
 
-const client = new MongoClient(uri, {
+const client = new MongoClient(url, {
     serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
@@ -62,7 +62,6 @@ export async function getBuildingCoordinates(buildingAbbreviation) {
 
     return await buildings.findOne({abbreviation: buildingAbbreviation});
 }
-
 
 export async function findClosestNode(lon, lat) {
     if (typeof lon != 'number' || typeof lat != 'number') {

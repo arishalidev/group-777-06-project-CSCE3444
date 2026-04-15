@@ -85,3 +85,11 @@ export async function findClosestNode(lon, lat) {
         }
     });
 }
+
+export async function getBuildingsFromDatabase() {
+    const db = client.db('buildings');
+    const buildings = db.collection('unt_main');
+
+    return await buildings.find({}).toArray();
+
+}

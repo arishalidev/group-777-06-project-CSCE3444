@@ -1,6 +1,14 @@
 import express from 'express';
 import cors from 'cors';
-import {findClosestNode, getAllEdges, getBuildingCoordinates, getNodes, run} from './database.js'
+import {
+    addFeedbackReport,
+    findClosestNode,
+    getAllEdges,
+    getBuildingCoordinates, getBuildings,
+    getBuildingsFromDatabase,
+    getNodes,
+    run
+} from './database.js'
 import { getWeatherAlerts } from "./weather.js";
 import {calculateShortestPath } from "./pathfinding.js";
 
@@ -73,3 +81,24 @@ app.get("/api/nodes", async (req, res) => {
         console.error(err.message);
     }
 });
+
+app.get('/get/buildings', async (req, res) => {
+    try {
+        const buildings = await getBuildings();
+        res.json({buildings: buildings});
+
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+        console.error(err.message);
+    }
+});
+
+app.get('/set/feedback', async (req, res) => {
+    try {
+        await addFeedbackReport(req.query.name, req.query.description, req.query.severity);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+        console.error(err.message);
+    }
+});
+

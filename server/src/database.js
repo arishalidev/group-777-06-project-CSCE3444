@@ -85,3 +85,21 @@ export async function findClosestNode(lon, lat) {
         }
     });
 }
+
+export async function getBuildings() {
+    const db = client.db('buildings');
+    const buildings = db.collection('unt_main');
+
+    return await buildings.find({}).toArray();
+}
+
+export async function addFeedbackReport(name, description, severity) {
+    const db = client.db('FeedbackReport');
+    const reports = db.collection('Reports');
+
+    if (typeof name != 'string' || typeof description != 'string' || typeof severity != 'string') {
+        throw new TypeError('Expected feedbackReport variables to be numbers');
+    }
+
+    await reports.insertOne({name: name, description: description, severity: severity});
+}

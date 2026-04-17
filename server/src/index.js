@@ -5,7 +5,6 @@ import {
     findClosestNode,
     getAllEdges,
     getBuildingCoordinates, getBuildings,
-    getBuildingsFromDatabase,
     getNodes,
     run
 } from './database.js'

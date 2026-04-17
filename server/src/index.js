@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import {
+    addFeedbackReport,
     findClosestNode,
     getAllEdges,
     getBuildingCoordinates, getBuildings,
@@ -86,6 +87,15 @@ app.get('/get/buildings', async (req, res) => {
         const buildings = await getBuildings();
         res.json({buildings: buildings});
 
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+        console.error(err.message);
+    }
+});
+
+app.get('/set/feedback', async (req, res) => {
+    try {
+        await addFeedbackReport(req.query.name, req.query.description, req.query.severity);
     } catch (err) {
         res.status(500).json({ error: err.message });
         console.error(err.message);

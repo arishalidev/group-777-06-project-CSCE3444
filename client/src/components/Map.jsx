@@ -1,8 +1,20 @@
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Polyline } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
 
 import {useEffect, useState} from "react";
+
+function FitBounds({ lines }) {
+    const map = useMap();
+    useEffect(() => {
+        if (!lines || lines.length === 0) return;
+        const allCoords = lines.flat().map(coord => [coord[1], coord[0]]);
+        if (allCoords.length > 0) {
+            map.fitBounds(allCoords, { padding: [40, 40] });
+        }
+    }, [lines]);
+    return null;
+}
 
 function MyMap({ startName, endName }) {
     const startingPosition = [33.214587, -97.148325]; // Latitude, Longitude
@@ -66,6 +78,7 @@ function MyMap({ startName, endName }) {
                     pathOptions={{ color: 'blue', weight: 5 }}
                 />
             ))}
+            {lines.length > 0 && <FitBounds lines={lines} />}
         </MapContainer>
 
     );

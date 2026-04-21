@@ -98,7 +98,7 @@ export async function addFeedbackReport(name, description, severity) {
     const reports = db.collection('Reports');
 
     if (typeof name != 'string' || typeof description != 'string' || typeof severity != 'string') {
-        throw new TypeError('Expected feedbackReport variables to be numbers');
+        throw new TypeError('Expected feedbackReport variables to be strings');
     }
 
     await reports.insertOne({name: name, description: description, severity: severity});

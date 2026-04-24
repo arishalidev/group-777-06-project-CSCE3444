@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar.jsx";
 import MyMap from "../components/Map.jsx";
 import WeatherAlertComponent from "../components/WeatherAlertComponent.jsx";
+import HazardReportModal from "../components/HazardReportComponent.jsx";
 import {useEffect, useState} from "react";
 
 function Navigation() {
@@ -10,6 +11,7 @@ function Navigation() {
     const [showMap, setShowMap] = useState(false);
     const [mapKey, setMapKey] = useState(0);
     const [showAlerts, setShowAlerts] = useState(false);
+    const [showHazardReport, setShowHazardReport] = useState(false);
 
     function renderMap() {
         setShowMap(true);
@@ -26,22 +28,6 @@ function Navigation() {
                 setBuildings(json.buildings);
             })
     }, []);
-
-
-    /*
-    const params = new URLSearchParams({
-        name: "hi",
-        severity: "HIGH",
-        description: "yes"
-    });
-
-    useEffect(() => {
-        fetch(`http://localhost:5001/set/feedback?${params.toString()}`)
-            .catch(err => {
-                console.error(err);
-            });
-    }, []);
-*/
 
     return (
         <div>
@@ -78,7 +64,7 @@ function Navigation() {
                 </div>
 
                 <div className={'mx-6'}>
-                    <h3 className={'text-xl invisible'}>End Location:</h3>
+                    <h3 className={'text-xl invisible'}>Start Navigation:</h3>
                     <button
                         className={'bg-green-500 rounded p-4 hover:bg-green-600 border-2'}
                         onClick={renderMap}
@@ -96,6 +82,16 @@ function Navigation() {
                         ⚠️ Weather Alerts
                     </button>
                 </div>
+
+                <div className={'mx-6'}>
+                    <h3 className={'text-xl invisible'}>Hazard:</h3>
+                    <button
+                        className={'bg-red-500 hover:bg-red-600 text-white font-medium rounded p-4 border-2 border-red-600'}
+                        onClick={() => setShowHazardReport(true)}
+                    >
+                        🚨 Report Hazard
+                    </button>
+                </div>
             </div>
 
             {showMap && (
@@ -108,6 +104,12 @@ function Navigation() {
                 <WeatherAlertComponent
                     defaultState="TX"
                     onClose={() => setShowAlerts(false)}
+                />
+            )}
+
+            {showHazardReport && (
+                <HazardReportModal
+                    onClose={() => setShowHazardReport(false)}
                 />
             )}
         </div>

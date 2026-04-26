@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar.jsx";
 import {useEffect, useState} from "react";
-import js from "@eslint/js";
 
 function Home() {
 
@@ -31,6 +30,7 @@ function Home() {
                                 <span className={"text-xl"}>{building.description}</span>
                                 <br/>
                                 <span className={"text-xl"}>{building.address}</span>
+                                <img src={`/images/${building.abbreviation}.jpg`} alt={building.name}/>
                             </div>
                         </div>
                 ))}

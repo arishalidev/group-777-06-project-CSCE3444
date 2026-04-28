@@ -12,8 +12,12 @@ function Navigation() {
     const [mapKey, setMapKey] = useState(0);
     const [showAlerts, setShowAlerts] = useState(false);
     const [showHazardReport, setShowHazardReport] = useState(false);
+    const [errors, setErrors] = useState({ start: false, end: false });
 
     function renderMap() {
+        const newErrors = { start: !startLocation, end: !endLocation };
+        setErrors(newErrors);
+        if (newErrors.start || newErrors.end) return;
         setShowMap(true);
         setMapKey(k => k + 1);
     }
@@ -41,7 +45,7 @@ function Navigation() {
                     <label htmlFor="start-location" className={'text-xl block'}>📍 Start Location:</label>
                     <select
                         id="start-location"
-                        className={'border-2 rounded-md p-4 appearance-none'}
+                        className={'border-2 rounded-md p-4'}
                         value={startLocation}
                         onChange={(e) => setStartLocation(e.target.value)}
                     >
@@ -52,6 +56,7 @@ function Navigation() {
                             </option>
                         ))}
                     </select>
+                    {errors.start && <p className="text-red-500 text-sm mt-1">Please select a start location.</p>}
                 </div>
 
                 <div className={'mx-6'}>
@@ -69,6 +74,7 @@ function Navigation() {
                             </option>
                         ))}
                     </select>
+                    {errors.end && <p className="text-red-500 text-sm mt-1">Please select an end location.</p>}
                 </div>
 
                 <div className={'mx-6'}>

@@ -16,7 +16,7 @@ function FitBounds({ lines }) {
     return null;
 }
 
-function MyMap({ startName, endName }) {
+function MyMap({ startName, endName, onRouteCalculated }) {
     const startingPosition = [33.214587, -97.148325]; // Latitude, Longitude
 
     const [nodes, setNodes] = useState([]);
@@ -39,10 +39,14 @@ function MyMap({ startName, endName }) {
     useEffect(() => {
         fetch(`http://localhost:5001/api/nodes?${params.toString()}`, {
             method: "GET"
-        })            .then(res => res.json())
+        })
+            .then(res => res.json())
             .then(json => {
                 setNodes(json.nodes);
                 setLines(json.lines);
+                if (onRouteCalculated && json.totalWeight !== undefined) {
+                    onRouteCalculated(json.totalWeight);
+                }
             })
             .catch(err => {
                 console.error(err);
@@ -60,7 +64,7 @@ function MyMap({ startName, endName }) {
         <MapContainer
             center={startingPosition}
             zoom={13}
-            style={{ height: '800px', width: '80%' }}
+            style={{ height: '400px', width: '80%' }}
         >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

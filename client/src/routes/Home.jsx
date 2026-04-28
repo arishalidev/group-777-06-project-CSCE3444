@@ -23,14 +23,14 @@ function Home() {
             <div className={'py-24'}>
                 <h1 className={'text-6xl text-center pb-12'}>Where to?</h1>
                 <div className={"grid grid-cols-3 mx-25 gap-12"}>
-                    {buildings.map((building) => (
+                    {buildings.filter(b => b.popular === true).map((building) => (
                         <div key={building._id} className={"bg-gray-100 rounded-xl"}>
                             <div className={"mx-12 my-4"}>
-                                <h2 className={"text-center text-xl m-2"}>{building.name}</h2>
+                                <h2 className={"text-center text-xl m-2 font-bold"}>{building.name}</h2>
                                 <span className={"text-xl"}>{building.description}</span>
                                 <br/>
                                 <span className={"text-xl"}>{building.address}</span>
-                                <img src={`/images/${building.abbreviation}.jpg`} alt={building.name}/>
+                                <img className={"mx-4"} src={`/images/${building.abbreviation}.jpg`} alt={building.name}/>
                             </div>
                         </div>
                 ))}

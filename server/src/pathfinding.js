@@ -1,6 +1,5 @@
 import UndirectedGraph from 'graphology';
 import { dijkstra } from 'graphology-shortest-path';
-import { getBuildingEntrances} from "./database.js";
 
 export function calculateShortestPath(to, from, edgeData) {
     const graph = new UndirectedGraph();

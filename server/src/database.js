@@ -27,6 +27,9 @@ export async function run() {
 }
 
 export async function getNodes(id = []) {
+    if(id.length === 0) {
+        throw new Error('Expected id length to be > 0!');
+    }
     const db = client.db('campus_graph');
     const nodes = db.collection('nodes');
 

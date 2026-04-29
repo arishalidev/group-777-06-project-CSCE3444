@@ -96,6 +96,12 @@ export async function getBuildings() {
     return await buildings.find({}).toArray();
 }
 
+export async function getFeedbackReports() {
+    const db = client.db('FeedbackReport');
+    const reports = db.collection('Reports');
+    return await reports.find({}).sort({ _id: -1 }).toArray();
+}
+
 export async function addFeedbackReport(name, description, severity) {
     const db = client.db('FeedbackReport');
     const reports = db.collection('Reports');

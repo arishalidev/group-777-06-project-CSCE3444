@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar.jsx";
 import MyMap from "../components/Map.jsx";
 import WeatherAlertComponent from "../components/WeatherAlertComponent.jsx";
 import HazardReportModal from "../components/HazardReportComponent.jsx";
+import HazardViewModal from "../components/HazardViewComponent.jsx";
 import {useEffect, useState} from "react";
 
 const VEHICLE_TYPES = [
@@ -54,6 +55,7 @@ function Navigation() {
     const [mapKey, setMapKey] = useState(0);
     const [showAlerts, setShowAlerts] = useState(false);
     const [showHazardReport, setShowHazardReport] = useState(false);
+    const [showHazardView, setShowHazardView] = useState(false);
     const [errors, setErrors] = useState({ start: false, end: false });
     const [totalWeight, setTotalWeight] = useState(null);
 
@@ -164,6 +166,15 @@ function Navigation() {
                         🚨 Report Hazard
                     </button>
                 </div>
+
+                <div className={'mx-6'}>
+                    <button
+                        className={'bg-orange-500 hover:bg-orange-600 text-white font-medium rounded p-4 border-2 border-orange-600 mt-9'}
+                        onClick={() => setShowHazardView(true)}
+                    >
+                        🛡️ View Hazards
+                    </button>
+                </div>
             </div>
 
             {showMap && (
@@ -190,6 +201,12 @@ function Navigation() {
             {showHazardReport && (
                 <HazardReportModal
                     onClose={() => setShowHazardReport(false)}
+                />
+            )}
+
+            {showHazardView && (
+                <HazardViewModal
+                    onClose={() => setShowHazardView(false)}
                 />
             )}
         </div>

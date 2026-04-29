@@ -64,7 +64,7 @@ function MyMap({ startName, endName, onRouteCalculated }) {
         <MapContainer
             center={startingPosition}
             zoom={13}
-            style={{ height: '400px', width: '80%' }}
+            style={{ height: '800px', width: '80%' }}
         >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

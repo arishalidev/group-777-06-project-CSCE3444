@@ -1,53 +1,74 @@
 import Navbar from "../components/Navbar.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Search() {
-    const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [buildings, setBuildings] = useState([]);
 
-    const sampleResults = [
-        { id: 1, name: "Discovery Park", desc: "Engineering and CS buildings" },
-        { id: 2, name: "Willis Library", desc: "Main library for studying" },
-        { id: 3, name: "University Union", desc: "Food court and student center" }
-    ];
+  const navigate = useNavigate();
 
-    const filtered = sampleResults.filter((item) =>
-        item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+  // Fetch buildings from backend
+  useEffect(() => {
+    fetch("http://localhost:5001/get/buildings")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("DATA:", data);
+        setBuildings(data.buildings);
+      })
+      .catch((err) => console.error(err));
+  }, []);
 
-    return (
-     <div>
-        <Navbar></Navbar>
+  // Filter buildings based on search
+  const filtered = buildings.filter((item) =>
+    item.name?.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
-        <div className={'py-24'}>
-            <h1 className= {'text-6xl text-center pb-12'}>Search Page</h1>
+  return (
+    <div>
+      <Navbar />
 
-            <div className="max-w-2xl mx-auto px-4">
-                <input
-                 type="text"
-                 placeholder="Search..."
-                 onChange={(e) => setSearchTerm(e.target.value)}
-                 className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6"
-             />
-            
-             <div className="space-y-4">
+      <div className="py-24">
+        <h1 className="text-6xl text-center pb-12">Search Page</h1>
+
+        <div className="max-w-2xl mx-auto px-4">
+          {/* Search Input */}
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6"
+          />
+
+          {/* Results */}
+          <div className="space-y-4">
             {filtered.map((item) => (
               <div
-                key={item.id}
-                className="border border-gray-200 rounded-lg p-4 shadow-sm"
+                key={item._id || item.name}
+                onClick={() =>
+                  navigate("/navigation", {
+                    state: {
+                      endLocation: item.abbreviation, // 🔥 important
+                    },
+                  })
+                }
+                className="border border-gray-200 rounded-lg p-4 shadow-sm cursor-pointer hover:bg-gray-100"
               >
-                <h2 className="text-x1 font-semibold">{item.name}</h2>
-                <p className="text-gray-600">{item.desc}</p>
+                <h2 className="text-xl font-semibold">{item.name}</h2>
+                <p className="text-gray-600">{item.address}</p>
               </div>
             ))}
 
+            {/* No results */}
             {filtered.length === 0 && (
-                <p className="text-center text-gray-500">No result found.</p>
+              <p className="text-center text-gray-500">No result found.</p>
             )}
           </div>
         </div>
-       </div>
-      </div>  
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Search;

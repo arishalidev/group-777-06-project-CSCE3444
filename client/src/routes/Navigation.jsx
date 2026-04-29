@@ -4,6 +4,7 @@ import WeatherAlertComponent from "../components/WeatherAlertComponent.jsx";
 import HazardReportModal from "../components/HazardReportComponent.jsx";
 import HazardViewModal from "../components/HazardViewComponent.jsx";
 import {useEffect, useRef, useState} from "react";
+import {useLocation} from "react-router-dom";
 
 const VEHICLE_TYPES = [
     { id: "walk",    label: "Walk",             emoji: "🚶", speedMs: 1.4 },
@@ -57,8 +58,9 @@ function ETACard({ distanceMeters, vehicleId, startLabel, endLabel }) {
 
 function Navigation() {
 
+    const { state } = useLocation();
     const [startLocation, setStartLocation] = useState("");
-    const [endLocation, setEndLocation] = useState("");
+    const [endLocation, setEndLocation] = useState(state?.endLocation ?? "");
     const [vehicleId, setVehicleId] = useState("walk");
     const [showMap, setShowMap] = useState(false);
     const [mapKey, setMapKey] = useState(0);

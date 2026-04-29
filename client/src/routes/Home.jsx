@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar.jsx";
+import { Link } from "react-router-dom";
 import {useEffect, useState} from "react";
 
 function Home() {
@@ -15,25 +16,47 @@ function Home() {
             });
     }, []);
 
-
-
     return (
-        <div>
-            <Navbar></Navbar>
-            <div className={'py-24'}>
-                <h1 className={'text-6xl text-center pb-12'}>Where to?</h1>
-                <div className={"grid grid-cols-3 mx-25 gap-12"}>
+        <div className="min-h-screen bg-white">
+            <Navbar />
+
+            {/* Hero */}
+            <div className="py-20 text-center px-6">
+                <h1 className="text-5xl font-bold text-gray-900 mb-3">Where to?</h1>
+                <p className="text-gray-500 text-lg">Popular destinations on campus</p>
+            </div>
+
+            {/* Building cards */}
+            <div className="max-w-6xl mx-auto px-6 pb-20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {buildings.filter(b => b.popular === true).map((building) => (
-                        <div key={building._id} className={"bg-gray-100 rounded-xl"}>
-                            <div className={"mx-12 my-4"}>
-                                <h2 className={"text-center text-xl m-2 font-bold"}>{building.name}</h2>
-                                <span className={"text-xl"}>{building.description}</span>
-                                <br/>
-                                <span className={"text-xl"}>{building.address}</span>
-                                <img className={"mx-4"} src={`/images/${building.abbreviation}.jpg`} alt={building.name}/>
+                        <div key={building._id} className="bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                            <img
+                                src={`/images/${building.abbreviation}.jpg`}
+                                alt={building.name}
+                                className="w-full h-48 object-cover"
+                            />
+                            <div className="p-5 flex flex-col flex-1">
+                                <h2 className="text-lg font-semibold text-gray-900 mb-1">{building.name}</h2>
+                                {building.description && (
+                                    <p className="text-sm text-gray-500 mb-1">{building.description}</p>
+                                )}
+                                {building.address && (
+                                    <p className="text-xs text-gray-400 mb-4">{building.address}</p>
+                                )}
+                                <div className="mt-auto">
+                                    <Link
+                                        to="/navigation"
+                                        state={{ endLocation: building.abbreviation }}
+                                        className="inline-block text-sm font-medium text-white px-4 py-2 rounded-lg"
+                                        style={{ backgroundColor: '#00853E' }}
+                                    >
+                                        Navigate →
+                                    </Link>
+                                </div>
                             </div>
                         </div>
-                ))}
+                    ))}
                 </div>
             </div>
         </div>
